@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  catUrl:'https://api.thecatapi.com/v1/breeds'
+  catUrl:'https://api.thecatapi.com/v1/breeds',
+  baseUrl:'https://go-dev-frontend.herokuapp.com/api'
 
 };
 

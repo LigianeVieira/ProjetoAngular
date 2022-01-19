@@ -26,5 +26,6 @@ export class ListComponent implements OnInit {
       this.cats = value.cats;
       console.log(value.cats)
     });
+    
   }
 }

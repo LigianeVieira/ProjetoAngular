@@ -1,15 +1,12 @@
-<h1> Cat Breed</h1>
-
-<mat-grid-list cols="4" rowHeight = "4:1">
-<div class="flex-container" >
+<h1>Cat Breed</h1>
+<div class="flex-container" col='4'>
   <mat-card class="cat-card" *ngFor="let cat of cats">
-    <mat-card-content >
-    <p><img [src]="cat.image.url" /></p>
-    <p>{{ cat.name }}</p>
-    <p>{{ cat.origin }}</p>
-    <p>{{ cat.description }}</p>
-    <p>{{ cat.temperament }}</p>
-  </mat-card-content>
-</mat-card>
+    <mat-card-content>
+      <p><img [src]="cat.image.url" /></p>
+      <p>{{ cat.name }}</p>
+      <p>{{ cat.origin }}</p>
+      <p>{{ cat.description }}</p>
+      <p>{{ cat.temperament }}</p>
+    </mat-card-content>
+  </mat-card>
 </div>
-</mat-grid-list>

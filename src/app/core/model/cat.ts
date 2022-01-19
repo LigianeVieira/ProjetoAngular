@@ -1,21 +1,18 @@
 export interface Cat {
 
-  id: string;
+
   name: string;
-  temperament: string;
+
   origin: string;
   description: string;
-  adaptabilidade: number;
-  affection_level: number;
-  child_friendly: number;
-  energy_level: number;
-  intelligence: number;
-  vocalisation: number;
-  rare: number;
+  temperament: string;
+  
+
+
 
 
 }
-// "wikipedia_url": "https://en.wikipedia.org/wiki/Abyssinian_(gato)",
+//wikipedia_url": "https://en.wikipedia.org/wiki/Abyssinian_(gato)",
 // "hipoalergênico": 0,
 // "reference_image_id": "0XYvRd7oD",
 

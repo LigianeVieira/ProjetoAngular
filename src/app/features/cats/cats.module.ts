@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { CatsRoutingModule } from './cats-routing.module';
 import { ReactiveFormsModule } from '@angular/forms';
-import { SharedModule } from 'src/app/shared/shared.module';
+
 import { ListComponent } from './list/list.component';
 
 
@@ -14,7 +14,8 @@ import { ListComponent } from './list/list.component';
     CatsRoutingModule,
     ReactiveFormsModule,
     CatsRoutingModule,
-    SharedModule,
-  ]
+
+  ],
+  exports:[ListComponent]
 })
 export class CatsModule { }

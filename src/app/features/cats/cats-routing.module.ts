@@ -20,7 +20,7 @@ const routes: Routes = [
     path: '',
     component: ListComponent,
     resolve: {
-     entities: CatDataResolver,
+    cats: CatDataResolver,
     },
   },
 ];

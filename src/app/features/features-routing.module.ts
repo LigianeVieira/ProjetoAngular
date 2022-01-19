@@ -6,13 +6,12 @@ import { PermissionGuard } from '../core/guards/permission.guard';
 
 const routes: Routes = [
   {path:'',
-    redirectTo:'cats',
+    redirectTo:'cat',
     pathMatch: 'full',
 },
 {
-  path: 'cats',
+  path: 'cat',
   canActivate: [PermissionGuard],
-
   loadChildren: async () => import('./cats/cats.module').then((m) =>m.CatsModule),
 },
   {

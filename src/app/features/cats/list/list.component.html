@@ -1,1 +1,14 @@
-<shared-list [headers]="headers"></shared-list>
+<div>
+<table>
+  <tr class="title-table">
+    <th *ngFor = "let header of headers">{{ header }}</th>
+  </tr>
+  <tr *ngFor = "let cat of cats">
+        <td><img [src]="cat.wikipedia_url"></td>
+    <td>{{cat.name }}</td>
+    <td>{{cat.origin  }}</td>
+    <td>{{cat.description  }}</td>
+    <td>{{cat.temperament  }}</td>
+  </tr>
+</table>
+</div>

@@ -5,7 +5,8 @@ import { CatsRoutingModule } from './cats-routing.module';
 import { ReactiveFormsModule } from '@angular/forms';
 
 import { ListComponent } from './list/list.component';
-
+import { MatCardModule } from '@angular/material/card';
+import {MatGridListModule} from '@angular/material/grid-list';
 
 @NgModule({
   declarations: [ListComponent],
@@ -14,6 +15,10 @@ import { ListComponent } from './list/list.component';
     CatsRoutingModule,
     ReactiveFormsModule,
     CatsRoutingModule,
+    MatCardModule,
+   MatGridListModule,
+
+
 
   ],
   exports:[ListComponent]

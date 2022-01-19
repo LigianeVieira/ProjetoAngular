@@ -1,14 +1,15 @@
-<div>
-<table>
-  <tr class="title-table">
-    <th *ngFor = "let header of headers">{{ header }}</th>
-  </tr>
-  <tr *ngFor = "let cat of cats">
-    <td><img [src]="cat.image.url"></td>
-    <td>{{cat.name }}</td>
-    <td>{{cat.origin  }}</td>
-    <td>{{cat.description  }}</td>
-    <td>{{cat.temperament  }}</td>
-  </tr>
-</table>
+<h1> Cat Breed</h1>
+
+<mat-grid-list cols="4" rowHeight = "4:1">
+<div class="flex-container" >
+  <mat-card class="cat-card" *ngFor="let cat of cats">
+    <mat-card-content >
+    <p><img [src]="cat.image.url" /></p>
+    <p>{{ cat.name }}</p>
+    <p>{{ cat.origin }}</p>
+    <p>{{ cat.description }}</p>
+    <p>{{ cat.temperament }}</p>
+  </mat-card-content>
+</mat-card>
 </div>
+</mat-grid-list>

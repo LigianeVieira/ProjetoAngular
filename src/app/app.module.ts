@@ -3,21 +3,30 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { FeaturesModule } from './features/features.module';
-import { PageNotFoundComponent } from './core/components/page-not-found/page-not-found.component';
-import { AnimalComponent } from './features/animal/animal.component';
+import { CatsModule } from './features/cats/cats.module';
+import { HttpClientModule } from '@angular/common/http';
+import { RouterModule } from '@angular/router';
+import { CoreModule } from './core/core.module';
+
 
 
 
 
 @NgModule({
   declarations: [
-    AppComponent,
-    PageNotFoundComponent,
-    AnimalComponent
+    AppComponent
+
+
   ],
   imports: [
     BrowserModule,
-    FeaturesModule
+    FeaturesModule,
+    HttpClientModule,
+    RouterModule.forRoot([]),
+    CoreModule,
+    CatsModule,
+
+
   ],
   providers: [],
   bootstrap: [AppComponent]

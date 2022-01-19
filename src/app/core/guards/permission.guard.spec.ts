@@ -1,25 +1,17 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { TestBed } from '@angular/core/testing';
+import { PermissionGuard } from './permission.guard';
 
-import { GuardsComponent } from './permission.guard';
-
-describe('GuardsComponent', () => {
-  let component: GuardsComponent;
-  let fixture: ComponentFixture<GuardsComponent>;
-
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      declarations: [ GuardsComponent ]
-    })
-    .compileComponents();
-  }));
+describe('PermissionGuard', () => {
+  let guard: PermissionGuard;
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(GuardsComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
+    TestBed.configureTestingModule({});
+    guard = TestBed.inject(PermissionGuard);
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
+  it('should be created', () => {
+    expect(guard).toBeTruthy();
   });
 });
+
+

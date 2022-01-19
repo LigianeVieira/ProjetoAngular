@@ -1,15 +1,20 @@
-import { Component, OnInit } from '@angular/core';
+import { Injectable } from '@angular/core';
+import { CanActivate, ActivatedRouteSnapshot, RouterStateSnapshot, UrlTree } from '@angular/router';
+import { Observable } from 'rxjs';
 
-@Component({
-  selector: 'app-guards',
-  templateUrl: './guards.component.html',
-  styleUrls: ['./guards.component.css']
+@Injectable({
+  providedIn: 'root',
 })
-export class GuardsComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
+export class PermissionGuard implements CanActivate {
+  canActivate(
+    next: ActivatedRouteSnapshot,
+    state: RouterStateSnapshot
+  ):
+    | Observable<boolean | UrlTree>
+    | Promise<boolean | UrlTree>
+    | boolean
+    | UrlTree {
+    const hasPermission = true;
+    return hasPermission;
   }
-
 }

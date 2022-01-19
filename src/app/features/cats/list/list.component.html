@@ -4,7 +4,7 @@
     <th *ngFor = "let header of headers">{{ header }}</th>
   </tr>
   <tr *ngFor = "let cat of cats">
-        <td><img [src]="cat.wikipedia_url"></td>
+    <td><img [src]="cat.image.url"></td>
     <td>{{cat.name }}</td>
     <td>{{cat.origin  }}</td>
     <td>{{cat.description  }}</td>

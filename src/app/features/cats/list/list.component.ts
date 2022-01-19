@@ -10,7 +10,7 @@ import { CatService } from 'src/app/core/service/cat/cat.service';
 })
 export class ListComponent implements OnInit {
   cats: Cat[] = [];
-  headers: string[] = ['Name', 'Origin', 'Description', 'Temperament'];
+  headers: string[] = ['','Name', 'Origin', 'Description', 'Temperament'];
 
   constructor(
     private catService: CatService,

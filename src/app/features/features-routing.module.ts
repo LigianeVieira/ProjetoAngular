@@ -10,7 +10,7 @@ const routes: Routes = [
     pathMatch: 'full',
 },
 {
-  path: 'animals',
+  path: 'cats',
   canActivate: [PermissionGuard],
 
   loadChildren: async () => import('./cats/cats.module').then((m) =>m.CatsModule),

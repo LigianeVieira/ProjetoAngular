@@ -1,8 +1,7 @@
-export interface Cats {
+export interface Cat {
 
   id: string;
   name: string;
-  cfa_url:string;
   temperament: string;
   origin: string;
   description: string;
@@ -10,9 +9,9 @@ export interface Cats {
   affection_level: number;
   child_friendly: number;
   energy_level: number;
-  inteligência: number;
-  vocalização: number;
-  raro: number;
+  intelligence: number;
+  vocalisation: number;
+  rare: number;
 
 
 }

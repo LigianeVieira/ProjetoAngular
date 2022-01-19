@@ -1,0 +1,13 @@
+<table class="table table-striped">
+  <tr class="title-table">
+    <th *ngFor="let header of headers">
+      {{ header }}
+    </th>
+  </tr>
+  <tr *ngFor="let entity of entities">
+    <td *ngFor="let key of keys">{{ entity[key] }}</td>
+    <td>
+    </td>
+  </tr>
+</table>
+

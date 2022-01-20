@@ -1,3 +1,6 @@
+body{
+  padding: 0;
+}
 a{
   text-decoration: none;
   margin: 20px;
@@ -20,5 +23,12 @@ a:hover{
 div{
   align-items: flex-end;
 
+}
+.mat-toolbar{
+  background: rgba(255, 228, 196, 0.678);
+  font:"Poppins", sans-serif;
+}
+.mat-toolbar-row, .mat-toolbar-single-row {
+  height: 85px;
 }
 

@@ -4,7 +4,9 @@ import { PageNotFoundComponent } from '../core/components/page-not-found/page-no
 import { PermissionGuard } from '../core/guards/permission.guard';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'cat', pathMatch: 'full' },
+  { path: '',
+   redirectTo: 'cat',
+    pathMatch: 'full' },
   {
     path: 'cat',
     canActivate: [PermissionGuard],

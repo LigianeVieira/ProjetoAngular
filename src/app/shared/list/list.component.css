@@ -1,0 +1,37 @@
+
+table {
+  width: 80%;
+  margin:0% 10%;
+  text-align: center;
+  background-color: rgb(100, 99, 96);
+  font-size: 18px;
+   color: bisque;
+
+}
+input{
+  width:44.5%;
+  height: 10px;
+  padding:10px;
+  margin-left: 187px;
+  margin-top: 3px;
+
+}
+th{
+  background-color: rgb(64, 61, 66);
+  font-size: 20px;
+
+}
+
+td{
+  align-items: center;
+  }
+  .delete{
+    background-color: rgb(155, 32, 57);
+    color:white
+  }
+  .edit{
+    background-color: rgb(247, 247, 31);
+    color: black;
+  }
+
+

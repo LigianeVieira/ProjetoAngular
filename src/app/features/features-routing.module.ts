@@ -14,6 +14,11 @@ const routes: Routes = [
   canActivate: [PermissionGuard],
   loadChildren: async () => import('./cats/cats.module').then((m) =>m.CatsModule),
 },
+{
+path: 'animals',
+canActivate: [PermissionGuard],
+loadChildren: async () => import('./animals/animals.module').then((m) =>m.AnimalModule),
+},
   {
     path:"**",
     component: PageNotFoundComponent

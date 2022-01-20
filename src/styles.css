@@ -1,8 +1,30 @@
 body{
   margin: 0;
+  padding: 10px;
   font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  background: linear-gradient(to right,#F51BA9, #0AA1A8,#A30FF5);
+
 }
 img{
   width: 160px;
 }
 
+button{
+  width: 80px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  font-style: italic;
+  align-items: stretch;
+  margin: 10px 15px 10px ;
+  font-weight: 700;
+
+  }
+  h1{
+    text-align: center;
+    font-size: 40px;
+    color: azure;
+    font-weight: 900;
+    margin-top: 100px;
+  }

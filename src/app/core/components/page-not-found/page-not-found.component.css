@@ -1,6 +1,9 @@
 .img {
-  position: absolute;
+  position: relative;
+  left:300px;
+  top:20px;
   margin: 5%;
   align-content: center;
   width: 60%;
+  border-radius: 5%;
 }

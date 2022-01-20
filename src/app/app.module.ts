@@ -8,6 +8,7 @@ import { RouterModule } from '@angular/router';
 import { CoreModule } from './core/core.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+
 @NgModule({
   declarations: [AppComponent],
   imports: [
@@ -16,7 +17,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HttpClientModule,
     RouterModule.forRoot([]),
     CoreModule,
-
     BrowserAnimationsModule,
   ],
   providers: [],

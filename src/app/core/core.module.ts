@@ -7,5 +7,6 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 @NgModule({
   declarations: [PageNotFoundComponent, NavBarComponent],
   imports: [CommonModule, MatToolbarModule],
+  exports:[NavBarComponent]
 })
 export class CoreModule {}

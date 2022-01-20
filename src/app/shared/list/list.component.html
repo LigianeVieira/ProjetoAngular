@@ -1,7 +1,5 @@
 <body>
-  <div><button (click)="goToAdd()">Add</button></div>
-  <div class="shearch"></div>
-  <input
+    <input
     type="text"
     placeholder="Search"
     [(ngModel)]="inputValue"
@@ -16,37 +14,13 @@
     <tr *ngFor="let entity of entities">
       <td mat-cell *ngFor="let key of keys">{{ entity[key] }}</td>
       <td>
-        <button class="edit" type="button" (click)="editEntity(entity.id)">
+        <button mat-raised-button color="accent" id="edit"(click)="editEntity(entity.id)">
           Edit
         </button>
-        <button class="delete" (click)="onDeleteEntity(entity.id)">
+        <button mat-raised-button color="warn" (click)="onDeleteEntity(entity.id)">
           Delete
         </button>
       </td>
     </tr>
   </table>
 </body>
-
-<!-- <div class="container">
-  <br/>
-  <div>
-    <input type="text" [(ngModel)]="inputValue" (keyup.enter)="search()" />
-    <button (click)="goToAdd()">Add</button>
-    </div>
-
-<br/>
-<table class="table table-striped">
-  <tr class="title-table">
-    <th *ngFor="let header of headers">
-      {{ header }}
-    </th>
-  </tr>
-  <tr *ngFor="let entity of entities">
-    <td *ngFor="let key of keys">{{ entity[key] }}</td>
-    <td>
-      <button (click)="editEntity(entity.id)">Edit</button>
-      <button (click)="onDeleteEntity(entity.id)">Delete</button>
-    </td>
-  </tr>
-</table>
-</div> -->

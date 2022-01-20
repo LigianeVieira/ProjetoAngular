@@ -21,11 +21,16 @@ th {
 td {
   align-items: center;
 }
-.delete {
-  background-color: rgb(155, 32, 57);
-  color: white;
+button{
+  margin-top: 5px;
+  margin-right: 16px;
 }
-.edit {
-  background-color: rgb(247, 247, 31);
-  color: black;
+#edit
+{
+  background-color:yellow;
+  color:black;
 }
+.mat-toolbar{
+  background-color: antiquewhite;
+}
+

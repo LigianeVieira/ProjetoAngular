@@ -10,15 +10,10 @@ img {
   width: 160px;
 }
 
-button {
-  width: 80px;
-  height: 30px;
-  border: none;
-  border-radius: 5px;
+ button {
   font-style: italic;
-  align-items: stretch;
-  margin: 10px 15px 10px;
-  font-weight: 700;
+   font-weight: 700;
+   
 }
 h1 {
   text-align: center;

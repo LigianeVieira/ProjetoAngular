@@ -27,7 +27,7 @@ export class FormComponent implements OnInit {
       specie: '',
     });
     const hasId = Boolean(this.activatedRoute.snapshot.params.id);
-    this.formTypeLabel = hasId ? 'Atualizar' : 'Cadastrar';
+    this.formTypeLabel = hasId ? 'Edit' : 'Add';
   }
 
   submit(event: Animal): void {

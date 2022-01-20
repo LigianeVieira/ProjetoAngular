@@ -1,7 +1,7 @@
 <body>
 <h1>Cat Breed</h1>
 <div class="flex-container">
-  <mat-card class="cat-card" *ngFor="let cat of cats">
+  <mat-card class="cat-card" *ngFor="let cat of cats | slice:0:30; let i=index">
     <mat-card-content>
       <p><img [src]="cat.image.url" /></p>
       <p>Name: {{ cat.name }}</p>

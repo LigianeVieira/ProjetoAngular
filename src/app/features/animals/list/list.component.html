@@ -1,7 +1,9 @@
 <div class="container">
-<h1>Listar Animais</h1>
-<shared-list [headers]="headers"
-(deleteEntity)="deleteAnimal($event)"
-(searchEntity)="searchAnimal($event)">
-</shared-list>
+  <h1>Listar Animais</h1>
+  <shared-list
+    [headers]="headers"
+    (deleteEntity)="deleteAnimal($event)"
+    (searchEntity)="searchAnimal($event)"
+  >
+  </shared-list>
 </div>

@@ -16,7 +16,6 @@ export class ListComponent implements OnInit {
   @Output()
   searchEntity = new EventEmitter();
 
-
   entities: any[];
   keys: string[];
   inputValue: string;
@@ -35,8 +34,8 @@ export class ListComponent implements OnInit {
     const obj = {
       query: this.inputValue,
       callback: (entities) => {
-        this.setEntities(entities)
-      }
+        this.setEntities(entities);
+      },
     };
     this.searchEntity.emit(obj);
   }
@@ -53,13 +52,13 @@ export class ListComponent implements OnInit {
     const obj = {
       id,
       callback: (entities) => {
-        this.setEntities(entities)
-      }
+        this.setEntities(entities);
+      },
     };
     this.deleteEntity.emit(obj);
   }
 
   private setEntities(entities) {
-    this.entities = entities
+    this.entities = entities;
   }
 }

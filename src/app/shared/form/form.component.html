@@ -1,4 +1,3 @@
-
 <form [formGroup]="formEntity">
   <div *ngFor="let value of keys">
     <label [for]="value">{{ value }}:</label>
@@ -6,9 +5,10 @@
     <input type="text" [formControlName]="value" [id]="value" />
     <br />
   </div>
-<div>
-  <button class="submit" type="button" (click)="clickOnSubmit()">Submit</button>
-  <button class="cancel" type="button" (click)="goBack()">Cancel</button>
-</div>
+  <div>
+    <button class="submit" type="button" (click)="clickOnSubmit()">
+      Submit
+    </button>
+    <button class="cancel" type="button" (click)="goBack()">Cancel</button>
+  </div>
 </form>
-

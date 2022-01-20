@@ -5,16 +5,8 @@ import { FeaturesRoutingModule } from './features-routing.module';
 import { CatsModule } from './cats/cats.module';
 import { AnimalModule } from './animals/animals.module';
 
-
 @NgModule({
   declarations: [],
-  imports: [
-    CommonModule,
-    FeaturesRoutingModule,
-    CatsModule,
-    AnimalModule,
-
-
-  ]
+  imports: [CommonModule, FeaturesRoutingModule, CatsModule, AnimalModule],
 })
-export class FeaturesModule { }
+export class FeaturesModule {}

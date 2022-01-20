@@ -7,11 +7,11 @@ import { AnimalService } from 'src/app/core/service/animal/animal.service';
 @Component({
   selector: 'app-form',
   templateUrl: './form.component.html',
-  styleUrls: ['./form.component.css']
+  styleUrls: ['./form.component.css'],
 })
 export class FormComponent implements OnInit {
   formAnimal: FormGroup;
-  formTypeLabel:string;
+  formTypeLabel: string;
 
   constructor(
     private activatedRoute: ActivatedRoute,
@@ -26,8 +26,8 @@ export class FormComponent implements OnInit {
       identification: '',
       specie: '',
     });
-    const hasId= Boolean(this.activatedRoute.snapshot.params.id);
-    this.formTypeLabel = hasId? 'Atualizar' : 'Cadastrar';
+    const hasId = Boolean(this.activatedRoute.snapshot.params.id);
+    this.formTypeLabel = hasId ? 'Atualizar' : 'Cadastrar';
   }
 
   submit(event: Animal): void {

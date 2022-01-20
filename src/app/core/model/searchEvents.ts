@@ -1,4 +1,4 @@
 export interface SearchEvent {
   query: string;
-  callback: (evntities: any[]) => void
+  callback: (evntities: any[]) => void;
 }

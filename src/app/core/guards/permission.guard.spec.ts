@@ -13,5 +13,3 @@ describe('PermissionGuard', () => {
     expect(guard).toBeTruthy();
   });
 });
-
-

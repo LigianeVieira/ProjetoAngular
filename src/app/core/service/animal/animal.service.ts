@@ -5,7 +5,7 @@ import { environment } from 'src/environments/environment';
 import { Animal } from '../../model/animal';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class AnimalService {
   private baseUrl = `${environment.baseUrl}/animals`;

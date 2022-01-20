@@ -6,9 +6,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 import { ListComponent } from './list/list.component';
 import { MatCardModule } from '@angular/material/card';
-import {MatGridListModule} from '@angular/material/grid-list';
-import {MatToolbarModule} from '@angular/material/toolbar';
-
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatToolbarModule } from '@angular/material/toolbar';
 
 @NgModule({
   declarations: [ListComponent],
@@ -20,11 +19,7 @@ import {MatToolbarModule} from '@angular/material/toolbar';
     MatCardModule,
     MatGridListModule,
     MatToolbarModule,
-
-
-
-
   ],
-  exports:[ListComponent]
+  exports: [ListComponent],
 })
-export class CatsModule { }
+export class CatsModule {}

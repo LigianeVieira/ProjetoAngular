@@ -16,8 +16,7 @@ export class CatService {
   allCats(): Observable<Cat[]> {
     return this.http.get<Cat[]>(`${this.catUrl}`);
   }
-  getCat():Observable<Cat>{
-    return this._cat.asObservable()
+  getCat(): Observable<Cat> {
+    return this._cat.asObservable();
   }
-
 }

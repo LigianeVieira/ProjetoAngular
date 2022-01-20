@@ -1,16 +1,15 @@
-body{
+body {
   margin: 0;
   padding: 10px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 14px;
-  background: linear-gradient(to right,#F51BA9, #0AA1A8,#A30FF5);
-
+  background: linear-gradient(to right, #f51ba9, #0aa1a8, #a30ff5);
 }
-img{
+img {
   width: 180px;
   border-radius: 10%;
 }
-h1{
+h1 {
   text-align: center;
   font-size: 40px;
   color: azure;
@@ -21,20 +20,17 @@ h1{
   margin: 30px;
   padding: 20px;
   max-width: 700px;
-  background-color:#333;
-  font-family: 'Poppins', sans-serif;
+  background-color: #333;
+  font-family: "Poppins", sans-serif;
   font-size: 14px;
   letter-spacing: 0.1rem;
   text-align: justify;
-
-
 }
 .flex-container {
   margin: 60px;
   display: grid;
   grid-template-columns: 50% 50%;
-  flex-direction:column;
-  align-items:stretch;
-  align-content:space-between;
-
+  flex-direction: column;
+  align-items: stretch;
+  align-content: space-between;
 }

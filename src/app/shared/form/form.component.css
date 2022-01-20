@@ -1,17 +1,17 @@
-form{
-position: relative;
-top:100px;
-left: 600px;
+form {
+  position: relative;
+  top: 100px;
+  left: 600px;
 }
 input {
   width: 30%;
   height: 30px;
 }
-.cancel{
+.cancel {
   background-color: rgb(155, 32, 57);
-    color:white
+  color: white;
 }
-.submit{
+.submit {
   background-color: rgb(9, 9, 136);
   color: white;
 }

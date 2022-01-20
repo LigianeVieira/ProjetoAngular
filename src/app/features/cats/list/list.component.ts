@@ -10,7 +10,6 @@ import { CatService } from 'src/app/core/service/cat/cat.service';
 })
 export class ListComponent implements OnInit {
   cats: Cat[] = [];
-  
 
   constructor(
     private catService: CatService,
@@ -24,8 +23,7 @@ export class ListComponent implements OnInit {
     });
     this.activatedRoute.data.subscribe((value) => {
       this.cats = value.cats;
-      console.log(value.cats)
+      console.log(value.cats);
     });
-
   }
 }

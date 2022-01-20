@@ -1,4 +1,4 @@
 export interface DeleteEvent {
   id: number;
-  callback: (evntities: any[]) => void
+  callback: (evntities: any[]) => void;
 }

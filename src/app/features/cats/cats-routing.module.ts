@@ -20,7 +20,7 @@ const routes: Routes = [
     path: '',
     component: ListComponent,
     resolve: {
-    cats: CatDataResolver,
+      cats: CatDataResolver,
     },
   },
 ];
@@ -28,6 +28,6 @@ const routes: Routes = [
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
-  providers:[CatDataResolver]
+  providers: [CatDataResolver],
 })
-export class CatsRoutingModule { }
+export class CatsRoutingModule {}

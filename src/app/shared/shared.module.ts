@@ -9,7 +9,7 @@ import {MatButtonModule} from '@angular/material/button';
 
 @NgModule({
   declarations: [ListComponent, FormComponent],
-  imports: [CommonModule, ReactiveFormsModule, FormsModule,MatButtonModule],
+  imports: [CommonModule, ReactiveFormsModule, FormsModule,MatButtonModule,],
   exports: [ListComponent, FormComponent,],
 })
 export class SharedModule {}

@@ -1,0 +1,35 @@
+
+ <input matInput
+  type="text"
+  placeholder="Search"
+  [(ngModel)]="inputValue"
+  (keyup.enter)="search()"
+/>
+
+<table mat-table>
+  <tr mat-header-row>
+    <th mat-header-cell *ngFor="let header of headers">
+      {{ header }}
+    </th>
+  </tr>
+  <tr *ngFor="let entity of entities">
+    <td mat-cell *ngFor="let key of keys">{{ entity[key] }}</td>
+    <td>
+      <button
+        mat-raised-button
+        color="accent"
+        id="edit"
+        (click)="editEntity(entity.id)"
+      >
+        Edit
+      </button>
+      <button
+        mat-raised-button
+        color="warn"
+        (click)="onDeleteEntity(entity.id)"
+      >
+        Delete
+      </button>
+    </td>
+  </tr>
+</table>

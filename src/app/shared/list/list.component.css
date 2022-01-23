@@ -1,0 +1,38 @@
+table {
+  width: 80%;
+  margin-right: 10%;
+  margin-left: 10%;
+  margin-bottom: 10%;
+  text-align: center;
+  background-color: rgb(100, 99, 96);
+  font-size: 18px;
+  color: bisque;
+}
+input {
+  width: 44.5%;
+  height: 10px;
+  padding: 10px;
+  margin-left: 10%;
+  margin-top: 5px;
+  background-color: antiquewhite;
+  border-style: dotted;
+}
+th {
+  background-color: rgb(64, 61, 66);
+  font-size: 20px;
+}
+
+td {
+  align-items: center;
+}
+button{
+  margin-top: 5px;
+  margin-right: 16px;
+}
+#edit
+{
+  background-color:yellow;
+  color:black;
+}
+
+

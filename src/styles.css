@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  background: linear-gradient(to right, #f51ba9, #0aa1a8, #a30ff5);
+  height: 100%;
+}
+img {
+  width: 160px;
+}
+
+ button {
+  font-style: italic;
+   font-weight: 700;
+
+}
+h1 {
+  text-align: center;
+  font-size: 40px;
+  color: azure;
+  font-weight: 900;
+  margin-top: 100px;
+}

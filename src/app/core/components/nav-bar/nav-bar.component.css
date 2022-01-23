@@ -1,0 +1,20 @@
+body{
+  padding: 0;
+}
+.mat-toolbar{
+  display: flex;
+  justify-content: space-between;
+  background: rgba(255, 228, 196, 0.678);
+  font:"Poppins", sans-serif;
+}
+a{
+  text-decoration: none;
+  margin: 20px;
+}
+a:hover{
+  color:blue;
+}
+.mat-toolbar-row, .mat-toolbar-single-row {
+  height: 85px;
+}
+
